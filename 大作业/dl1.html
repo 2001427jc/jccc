@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="dl1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <div class="form">
+            <input type="text" placeholder="您的账号">
+            <input type="password" placeholder="您的密码">
+            <a href="zhuye.html"><button class="btn-login">登录</button></a>
+        </div>
+    </div>
+    <ul class="bg-squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+	<script>
+		// 要操作的元素
+		const container=document.querySelector('.container');
+		const btn_login=document.querySelector('.btn-login');
+		
+		// 登录按钮点击事件
+		btn_login.addEventListener('click',function(){
+		    // 这里只作效果展示，就不写逻辑判断了。
+		    container.classList.add('success');
+		})
+	</script>
+</body>
+
+</html>
